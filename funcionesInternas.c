@@ -53,5 +53,8 @@ int * generar_vector(int n){
 
 
 
+/*int * cargar_ficheros(){
 
+	return NULL;
+}*/
 

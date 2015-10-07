@@ -26,12 +26,14 @@ void burbuja();
 //Subcategoría de algoritmos
 int burbuja_vector();
 int burbuja_aleatoria();
+int burbuja_fichero();
 
 //Funciones más generales
 int introducirVector(int*, int);
 int mostrarVector(int*, int);
 void intercambiar(int *, int *);
-int* generar_vector(int);
+int * generar_vector(int);
+int * cargar_ficheros();
 
 //Algoritmos PUROS
 int* ordenacionBurbuja(int *, int);

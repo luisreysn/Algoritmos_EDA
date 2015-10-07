@@ -63,6 +63,8 @@ void burbuja(){
 			burbuja_aleatoria();
 			break;
 		case 3:
+			system("cls");
+			burbuja_fichero();
 			break;
 		
 		

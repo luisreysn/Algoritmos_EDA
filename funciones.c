@@ -113,3 +113,35 @@ int burbuja_aleatoria(){
 	system("cls");
 	return 0;
 }
+
+int burbuja_fichero(){
+	int n;
+	int *vector;
+	int *vector_ordenado;
+	char nombre[100];
+
+	printf("Indica el nombre del fichero (con .txt): ");
+	scanf("%s", &nombre);
+	
+	//vector = cargar_fichero();
+	
+	printf("\nEl vector leido es el siguiente:\n");
+	if(mostrarVector(vector, n) == 2){
+		printf("Error, vector aleatorio vacio.\n\n");
+		return 2;
+	}
+	printf("\n\n");
+	
+	vector_ordenado = ordenacionBurbuja(vector, n); 
+	
+	printf("\nEl vector ya ordenado queda tal que asi:\n");
+	if(mostrarVector(vector_ordenado, n) == 2){
+		printf("Error, vector ordenado vacio.\n\n");
+		return 2;
+	}
+	
+	printf("\n\n");
+	system("pause");
+	system("cls");
+	return 0;
+}
