@@ -35,7 +35,7 @@ int mostrarVector(int * vector, int n){
 	
 }*/
 
-/*int* generar_vector(int n){
+int * generar_vector(int n){
 	int * vector;
 	int x;
 	
@@ -45,10 +45,11 @@ int mostrarVector(int * vector, int n){
 	}
 	
 	for(x=0; x<n; x++){
-		vector[x] = rand() % 1 - 100;
+		vector[x] = (1 + rand() % 100);
 	}
-	
-}*/
+
+	return vector;	
+}
 
 
 

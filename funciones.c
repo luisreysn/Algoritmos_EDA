@@ -61,7 +61,7 @@ int burbuja_vector(){
 	}
 	system("cls");
 	
-	printf("El vector introducido es el siguiente:\n\n");
+	printf("\nEl vector introducido es el siguiente:\n");
 	if(mostrarVector(vector, n) == 2){
 		printf("Error, vector vacio.\n");
 		return 2;
@@ -70,7 +70,7 @@ int burbuja_vector(){
 	
 	vector_ordenado = ordenacionBurbuja(vector, n); 
 	
-	printf("El vector ya ordenado queda tal que asi:\n\n");
+	printf("\nEl vector ya ordenado queda tal que asi:\n");
 	if(mostrarVector(vector_ordenado, n) == 2){
 		printf("Error, vector vacio.\n");
 		return 2;
@@ -84,7 +84,7 @@ int burbuja_vector(){
 
 
 int burbuja_aleatoria(){
-	/*int n;
+	int n;
 	int *vector;
 	int *vector_ordenado;
 	
@@ -93,22 +93,23 @@ int burbuja_aleatoria(){
 	
 	vector = generar_vector(n);
 	
-	printf("El vector generado es el siguiente:\n\n");
+	printf("\nEl vector generado es el siguiente:\n");
 	if(mostrarVector(vector, n) == 2){
-		printf("Error, vector vacio.\n");
+		printf("Error, vector aleatorio vacio.\n\n");
 		return 2;
 	}
-	printf("\n");
+	printf("\n\n");
 	
 	vector_ordenado = ordenacionBurbuja(vector, n); 
 	
-	printf("El vector ya ordenado queda tal que asi:\n\n");
+	printf("\nEl vector ya ordenado queda tal que asi:\n");
 	if(mostrarVector(vector_ordenado, n) == 2){
-		printf("Error, vector vacio.\n");
+		printf("Error, vector ordenado vacio.\n\n");
 		return 2;
 	}
 	
+	printf("\n\n");
 	system("pause");
-	system("cls");*/
+	system("cls");
 	return 0;
 }
